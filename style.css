@@ -117,11 +117,12 @@ body{
 }
 
 .hero-image{
-    width:320px;
-    height:320px;
+    width:350px;
+    height:350px;
     border-radius:50%;
     overflow:hidden;
-    background:#2563eb;
+    flex-shrink:0;
+    border:5px solid #2563eb;
     box-shadow:0 0 40px rgba(37,99,235,.6);
 }
 
@@ -129,6 +130,6 @@ body{
     width:100%;
     height:100%;
     object-fit:cover;
+    object-position:center;
     display:block;
 }
-
