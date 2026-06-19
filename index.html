@@ -1,91 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
+    <title>Oshilaja | Portfolio</title>
 
-body{
-    background:#0f172a;
-    color:white;
-}
-
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 10%;
-}
-
-.logo{
-    font-size:28px;
-    font-weight:bold;
-}
-
-nav ul{
-    display:flex;
-    list-style:none;
-    gap:20px;
-}
-
-.hero{
-    height:85vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-}
-
-.hero h1{
-    font-size:60px;
-    margin-bottom:20px;
-}
-
-.hero p{
-    font-size:20px;
-    color:#cbd5e1;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:25px;
-    padding:12px 25px;
-    background:#2563eb;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
-}
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav>
-<div class="logo">Portfolio</div>
+<nav class="navbar">
 
-<ul>
-<li>Home</li>
-<li>About</li>
-<li>Projects</li>
-<li>Contact</li>
-</ul>
+    <h2 class="logo">OSHILAJA</h2>
+
+    <ul>
+
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#skills">Skills</a></li>
+
+        <li><a href="#projects">Projects</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
 </nav>
 
 <section class="hero">
-<div>
-<h1>Hello, I'm Oshilaja</h1>
-<p>Web Developer & Future Tech Entrepreneur</p>
-<a href="#" class="btn">View My Work</a>
+
+<div class="hero-content">
+
+<h1>Hello, I'm <span>Oshilaja</span></h1>
+
+<h2>Future Full-Stack Web Developer</h2>
+
+<p>
+I design and build modern websites that are fast,
+responsive, and user-friendly.
+</p>
+
+<a href="#" class="btn">
+View My Projects
+</a>
+
 </div>
+
 </section>
+
+<script src="script.js"></script>
 
 </body>
 </html>
