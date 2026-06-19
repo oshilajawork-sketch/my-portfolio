@@ -10,8 +10,9 @@ html{
 }
 
 body{
-    background:#071226;
+    background:linear-gradient(135deg,#071226,#0d1b36,#071226);
     color:white;
+    overflow-x:hidden;
 }
 
 /* Navigation */
@@ -75,6 +76,8 @@ body{
     font-weight:800;
     line-height:1;
     margin:18px 0;
+    color:white;
+    text-shadow:0 0 20px rgba(37,99,235,.5);
 }
 
 .hero h2{
@@ -444,4 +447,77 @@ body{
 .contact-btn:hover{
     transform:translateY(-3px);
     box-shadow:0 0 20px rgba(37,99,235,.5);
+}
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px){
+
+    .navbar{
+        flex-direction:column;
+        align-items:center;
+        padding:15px 20px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+        margin-top:15px;
+    }
+
+    .hero{
+        flex-direction:column-reverse;
+        justify-content:center;
+        text-align:center;
+        padding:140px 20px 60px;
+        gap:40px;
+    }
+
+    .hero-text{
+        max-width:100%;
+    }
+
+    .hero h1{
+        font-size:46px;
+    }
+
+    .hero h2{
+        font-size:24px;
+    }
+
+    .description{
+        font-size:17px;
+    }
+
+    .buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .hero-image{
+        width:250px;
+        height:250px;
+    }
+
+    .about-container,
+    .contact-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .about-stats{
+        display:grid;
+        grid-template-columns:1fr;
+    }
+
+    .skills-container,
+    .projects-container{
+        grid-template-columns:1fr;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-btn{
+        width:100%;
+    }
 }
